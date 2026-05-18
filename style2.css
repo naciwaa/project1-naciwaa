@@ -1,0 +1,51 @@
+/* Kita panggil tag 'body' (seluruh layar background) */
+body {
+    font-family: Arial, sans-serif; /* Ganti font biar nggak jadul */
+    background-color: #e0e6ed; /* Warna background abu-abu kebiruan */
+    text-align: center; /* Bikin semua teks di layar otomatis ke tengah */
+}
+
+
+/* Kita panggil kardusnya pakai tanda TITIK (.) karena di HTML kita pakainya 'class' */
+.kardus-login {
+    background-color: white; /* Cat kardusnya warna putih */
+    width: 300px; /* Lebar kardusnya kita patok 300 pixel aja */
+   
+    /* Margin: dorong tetangga dari luar kardus.
+       50px itu dorong dari atas, 'auto' otomatis ngedorong dari kiri-kanan biar kardus pas di tengah layar */
+    margin: 50px auto;
+   
+    /* Padding: dorong dari dalem kardus, ngasih bubble wrap biar teks nggak nabrak tembok kardus */
+    padding: 20px;
+   
+    border-radius: 10px; /* Numpulin ujung kardus yang tadinya kotak tajam jadi agak melengkung */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Ngasih efek bayangan hitam transparan (3D) */
+}
+
+
+/* Moles kotak inputan teksnya */
+.input-teks {
+    width: 90%; /* Lebar kotak ketikan menuhin 90% kardus */
+    padding: 10px; /* Biar dalem kotaknya agak lega pas ngetik */
+    margin-bottom: 15px; /* Ngasih jarak ke bawah biar inputan pertama & kedua ga nempel */
+    border-radius: 5px; /* Bikin ujung inputan sedikit tumpul */
+    border: 1px solid #ccc; /* Ngasih garis pinggir tipis warna abu-abu */
+}
+
+
+/* Moles tombolnya */
+.tombol-gas {
+    background-color: #007bff; /* Warna biru khas tombol */
+    color: white; /* Tulisan di dalem tombol warna putih */
+    padding: 10px 20px; /* Ngatur tinggi dan lebar isi tombol */
+    border: none; /* Ngilangin garis pinggir bawaan yang jelek */
+    border-radius: 5px; /* Ujung tumpul */
+    cursor: pointer; /* Bikin mouse berubah jadi gambar tangan pas nyentuh tombol */
+    transition: 0.3s; /* Bikin animasi berubah warna nanti jadi smooth */
+}
+
+
+/* Fitur sensor sentuh (Hover): CSS cuma aktif pas mouse di atas tombol */
+.tombol-gas:hover {
+    background-color: #0056b3; /* Warnanya berubah jadi biru lebih gelap pas disentuh */
+}

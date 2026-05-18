@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Bagian head ini KTP website, nggak akan kelihatan di layar putih -->
+    <meta charset="UTF-8">
+    <title>Login Barbarce</title>
+
+
+    <!-- PENTING: Ini kabel penghubung biar HTML bisa baca CSS.
+         Ibaratnya ini jalan tol yang nyambungin tulang sama kulit. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- div adalah KARDUS. Kita bungkus form kita di dalam kardus ini
+         biar nanti gampang digeser-geser ke tengah layar barengan.
+         Kita kasih nama (class) "kardus-login" biar CSS gampang manggilnya. -->
+    <div class="kardus-login">
+       
+        <!-- h2 itu buat judul gede, tapi nggak segede h1 -->
+        <h2>Login Tongkrongan</h2>
+       
+        <form>
+            <label>Nama Lu:</label><br>
+            <!-- Tambahin id="inputNama" di sini -->
+            <input type="text" id="inputNama" class="input-teks" placeholder="Ketik nama di sini..."><br>
+
+
+            <label>Password Rahasia:</label><br>
+            <input type="password" class="input-teks" placeholder="Ssst... rahasia"><br>
+
+
+            <!-- Tambahin id="tombolLogin" di sini -->
+            <button type="button" id="tombolLogin" class="tombol-gas">Masuk Coy!</button>
+        </form>
+
+
+    </div>
+
+
+    <!-- PENTING: Colok kabel JS di sini, persis di atas tag penutup body -->
+    <script src="script.js"></script>
+</body>
+</html>

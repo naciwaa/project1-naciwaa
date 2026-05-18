@@ -1,0 +1,65 @@
+
+/* Kita setel tampilan dasar seluruh layarnya dulu */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font modern, bukan Times New Roman */
+    background-color: #4fd02e; /* Warna background biru super muda biar mata adem */
+    color: #333; /* Teksnya abu-abu gelap, jangan hitam pekat biar nggak sakit mata */
+    line-height: 1.6; /* Jarak antar baris teks dilegain dikit biar gampang dibaca */
+}
+
+
+/* Ini kardus utama kita, biar kontennya nggak nempel di ujung kiri layar */
+.wadah-materi {
+    background-color: white; /* Dalem kardusnya warna putih */
+    max-width: 800px; /* Lebar kardusnya dibatesin max 800 pixel */
+    margin: 40px auto; /* 40px dorong dari atas-bawah, 'auto' biar kardusnya ke tengah layar */
+    padding: 30px; /* Bubble wrap dari dalem biar teksnya nggak nabrak tembok kardus */
+    border-radius: 12px; /* Ujung kardus dibikin tumpul */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Kasih bayangan tipis ala web modern */
+}
+
+
+/* Khusus h1 kita kasih warna dan garis bawah */
+h1 {
+    color: #e74c3c; /* Warna merah */
+    text-align: center; /* Posisinya ditaruh di tengah */
+    border-bottom: 3px solid #e74c3c; /* Garis bawah (bawahnya aja) tebal 3 pixel */
+    padding-bottom: 10px; /* Jarak antara teks h1 ke garis bawahnya */
+}
+
+
+/* Khusus h2 kita kasih warna biru */
+h2 {
+    color: #ca0eb4;
+    margin-top: 30px; /* Kasih jarak yang lumayan jauh dari konten di atasnya */
+}
+
+
+/* Moles tag hr (garis pembatas) biar nggak kaku */
+hr {
+    border: 0;
+    border-top: 2px dashed #bdc3c7; /* Garisnya dibikin putus-putus (dashed) */
+    margin: 25px 0; /* Kasih jarak atas dan bawahnya */
+}
+
+
+/* Moles pintu / link (tag a) */
+a {
+    color: #d35400; /* Warna oren */
+    text-decoration: none; /* Ngilangin garis bawah bawaan link yang jadul */
+    font-weight: bold; /* Teksnya ditebelin */
+}
+
+
+/* Efek pas link-nya disentuh mouse */
+a:hover {
+    color: #e67e22; /* Warnanya agak pudar dikit */
+    text-decoration: underline; /* Garis bawahnya baru muncul pas disentuh */
+}
+
+
+/* Moles gambar biar responsif (ngikutin ukuran layar) */
+img {
+    max-width: 100%; /* Gambarnya nggak bakal melebihi lebar kardus */
+    border-radius: 8px; /* Ujung fotonya dibikin tumpul */
+}
